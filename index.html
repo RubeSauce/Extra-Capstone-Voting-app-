@@ -1,0 +1,587 @@
+<html lang="en">
+<head>
+<title>Poll App</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src ="app.js"></script>
+</head>
+<body>
+    
+ 
+<div class="sidenav">
+  <a id="home">Home</a>
+  <a id="soccer">Soccer</a>
+  <a id="basketball">Basketball</a>
+  <a id="football">Football</a>
+  <a id="celeb">Celebrities</a>
+  <a id="music">Music</a>
+  <a id="school">School</a>
+  <a id="movies">Movies</a>
+  
+</div>
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div id = "homePage">
+    
+<div class="content">
+    
+  <h1>Poll App</h1>
+    <h3><strong>Be careful, you can only vote once per category.</strong></h3>
+    <hr>
+    
+    <h3><i>An app where you can vote on what ever you like.</i></h3>
+
+    
+    <div id="piechart"></div>
+
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+    
+   <script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Question', 'What would you rate this website?'],
+  ['5 Stars', 8],
+  ['4 Stars', 2],
+  ['3 Stars', 4],
+  ['2 Stars',2],
+  ['1 Star',1]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {
+      fontSize: 18,
+      title:'What would you rate this website?', 
+      width:700,
+      height:500,
+      pieSliceBorderColor:'black',
+      colors:['black','grey','darkgray','lightgray','white']};
+    
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+    
+    <div id = "buttons">
+<button id = "five">5 Stars</button>
+<button id = "four">4 Stars</button>
+<button id = "three">3 Stars</button>
+<button id = "two">2 Stars</button>
+<button id = "one">1 Star</button>
+      </div>    
+    </div>
+    </div>
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id = "soccerPage">
+    
+<div class="content">
+    
+  <h1>Soccer Poll</h1>
+    
+    <hr>
+    
+    <h3><i>Who is the G.O.A.T.</i></h3>
+
+    
+    <div id="piechart1"></div>
+
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+    
+   <script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Question', 'Who is the greatest of all time soccer player?'],
+  ['Cristiano Ronaldo', 30],
+  ['Lionel Messi', 27],
+  ['Pele', 12],
+  ['Neymar',8],
+  ['Ronaldinho',19]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {
+      fontSize: 18,
+      
+      title:'Who is the greatest of all time soccer player?', 
+      width:700,
+      height:500, 
+      pieSliceBorderColor:'black',
+      colors:['black','grey','darkgray','lightgray','white']};
+    
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+  chart.draw(data, options);
+}
+</script>
+    
+    <div id = "buttons">
+<button id = "a5"><strong>C.Ronaldo</strong></button>
+<button id = "a4"><strong>L.Messi</strong></button>
+<button id = "a3"><strong>Pele</strong></button>
+<button id = "a2"><strong>Neymar Jr.</strong></button>
+<button id = "a1"><strong>Ronaldinho</strong></button>
+      </div>    
+    </div>
+    </div>
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id = "basketballPage">
+    
+<div class="content">
+    
+  <h1>Basketball Poll</h1>
+    
+    <hr>
+    
+    <h3><i>Who is the G.O.A.T.</i></h3>
+
+    
+    <div id="piechart2"></div>
+
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+    
+   <script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Question', 'Who is the greatest of all time?'],
+  ['Michael Jordan', 8],
+  ['Lebron James', 2],
+  ['Kobe Bryant', 4],
+  ['Wilt Chamberlain',2],
+  ['Magic Johnson',1]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {
+      fontSize: 18,
+      title:'Who is the greatest of all time?', 
+      width:700,
+      height:500,
+      pieSliceBorderColor:'black',
+      colors:['black','grey','darkgray','lightgray','white']};
+    
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+  chart.draw(data, options);
+}
+</script>
+    
+    <div id = "buttons">
+<button id = "b5">M.Jordan</button>
+<button id = "b4">L.James</button>
+<button id = "b3">K.Bryant</button>
+<button id = "b2">W.Chamberlain</button>
+<button id = "b1">M.Johnson</button>
+      </div>    
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id = "footballPage">
+    
+<div class="content">
+    
+  <h1>Football Poll</h1>
+    
+    <hr>
+    
+    <h3><i>Who is the G.O.A.T.</i></h3>
+
+    
+    <div id="piechart3"></div>
+
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+    
+   <script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Question', 'Who is the greatest of all time?'],
+  ['Tom Brady', 8],
+  ['Peyton Manning', 2],
+  ['Joe Montana', 4],
+  ['Brett Farve',2],
+  ['Drew Brees',1]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {
+      fontSize: 18,
+      title:'Who is the greatest of all time?', 
+      width:700,
+      height:500,   
+      pieSliceBorderColor:'black',
+      colors:['black','grey','darkgray','lightgray','white']};
+    
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart3'));
+  chart.draw(data, options);
+}
+</script>
+    
+    <div id = "buttons">
+<button id = "c5">T.Brady</button>
+<button id = "c4">J.Montana</button>
+<button id = "c3">P.Manning</button>
+<button id = "c2">B.Farve</button>
+<button id = "c1">1 D.Brees</button>
+      </div>    
+    </div>
+    </div>
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id = "celebPage">
+    
+<div class="content">
+    
+  <h1>Celebrity Poll</h1>
+    
+    <hr>
+    
+    <h3><i>Who is the most popular celebrity?</i></h3>
+
+    
+    <div id="piechart4"></div>
+
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+    
+   <script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Question', 'Who is the most popular celebrity?'],
+  ['Salena Gomez', 8],
+  ['Ariana Grande', 2],
+  ['Beyonce', 4],
+  ['Taylor Swift',2],
+  ['Kylie Jenner',1],
+  ['Dwayne Johnson', 2],
+  ['Kanye West', 8],
+  ['Justin Beiber', 3],
+  ['Justin Timberlake',1],
+  ['Rihanna', 7],
+  ['Demi Lovato', 5],
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {
+      fontSize: 18,
+      title:'Who is the most popular celebrity?', 
+      width:700,
+      height:500, 
+      pieSliceBorderColor:'black',
+      colors:['red','#cb0e0e','orange','darkorange','yellow','green','darkgreen','blue','darkblue','indigo','#4a235a']};
+    
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart4'));
+  chart.draw(data, options);
+}
+</script>
+    
+    <div id = "buttons">
+<button id = "d11">5 Stars</button>
+<button id = "d10">4 Stars</button>
+<button id = "d9">3 Stars</button>
+<button id = "d8">2 Stars</button>
+<button id = "d7">1 Star</button>
+<button id = "d6">5 Stars</button>
+<button id = "d5">4 Stars</button>
+<button id = "d4">3 Stars</button>
+<button id = "d3">2 Stars</button>
+<button id = "d2">1 Star</button>
+<button id = "d1">1 Star</button>
+      </div>    
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id = "musicPage">
+    
+<div class="content">
+    
+  <h1>Music Pole</h1>
+    
+    <hr>
+    
+    <h3><i>What is the best album of 2018?</i></h3>
+
+    
+    <div id="piechart5"></div>
+
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+    
+   <script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Question', 'Who is the greatest of all time?'],
+  ['Astro', 8],
+  ['Scorpion', 2],
+  ['SR3MM', 4],
+  ['Beer',2],
+  ['Metro',1]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {
+      fontSize: 18,
+      title:'Who is the greatest of all time?', 
+      width:700,
+      height:500, 
+      pieSliceBorderColor:'black',
+      colors:['black','grey','darkgray','lightgray','white']};
+    
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart5'));
+  chart.draw(data, options);
+}
+</script>
+    
+    <div id = "buttons">
+<button id = "e5">Travis Scott 'Astroworld'</button>
+<button id = "e4">Drake,'Scorpion'</button>
+<button id = "e3">Rae Srem 'SR3MM'</button>
+<button id = "e2">Post,'Beerbongs and Bentleys'</button>
+<button id = "e1">Metro B 'N.A.H.W.C'</button>
+      </div>    
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id = "schoolPage">
+    
+<div class="content">
+    
+  <h1>School Pole</h1>
+    
+    <hr>
+    
+    <h3><i>Which class is your favorite from this list?</i></h3>
+
+    
+    <div id="piechart6"></div>
+
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+    
+   <script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Question', 'Which class is your favorite from this list?'],
+  ['Math', 8],
+  ['English', 2],
+  ['History', 4],
+  ['Science',2],
+  ['PE/Health',1]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {
+      fontSize: 18,
+      title:'Which class is your favorite from this list?', 
+      width:700,
+      height:500, 
+      pieSliceBorderColor:'black',
+      colors:['black','grey','darkgray','lightgray','white']};
+    
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart6'));
+  chart.draw(data, options);
+}
+</script>
+    
+    <div id = "buttons">
+<button id = "f5">Math</button>
+<button id = "f4">English</button>
+<button id = "f3">History</button>
+<button id = "f2">Science</button>
+<button id = "f1">PE/Health</button>
+      </div>    
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id = "moviesPage">
+    
+<div class="content">
+    
+  <h1>Movies Poll</h1>
+    
+    <hr>
+    
+    <h3><i>Which movie/series is the best?</i></h3>
+
+    
+    <div id="piechart7"></div>
+
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+    
+   <script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Question', 'Who is the greatest of all time?'],
+  ['Star Wars', 8],
+  ['Avengers', 2],
+  ['The Godfather', 4],
+  ['Lord of the Rings',2],
+  ['Harry Potter',1]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {
+      fontSize: 18,
+      title:'Who is the greatest of all time?', 
+      width:700,
+      height:500,
+      pieSliceBorderColor:'black',
+      colors:['black','grey','darkgray','lightgray','white']};
+    
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart7'));
+  chart.draw(data, options);
+}
+</script>
+    
+    <div id = "buttons">
+<button id = "g5">Star Wars</button>
+<button id = "g4">Avengers</button>
+<button id = "g3">The Godfather</button>
+<button id = "g2">Lord of the Rings</button>
+<button id = "g1">Harry Potter</button>
+      </div>    
+    </div>
+    </div>
+    
+</body>
+</html>
